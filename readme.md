@@ -1,6 +1,14 @@
 # FastAPI Stock Price API
 
-This is a FastAPI application that provides HTTP APIs to perform operations on daily stock prices using the AlphaVantage API. 
+This FastAPI application provides HTTP APIs to access and analyze daily stock prices using data sourced from the AlphaVantage API.
+
+## API Endpoints
+
+- **`lookup`**: Retrieve stock data for a specific symbol and date. This endpoint returns the open, high, low, close, and volume data for the specified date.
+
+- **`min`**: Retrieve the lowest price traded over the last `n` days for a specified stock symbol. This endpoint returns the lowest low price within the given range of days.
+
+- **`max`**: Retrieve the highest price traded over the last `n` days for a specified stock symbol. This endpoint returns the highest high price within the given range of days.
 
 ## Requirements
 
@@ -10,7 +18,7 @@ This is a FastAPI application that provides HTTP APIs to perform operations on d
 ## Setup Instructions
 
 1. **Install Poetry**:
-    - Make sure you have Python 3.7 or higher installed.
+    - Make sure you have Python 3.78or higher installed.
     - Install Poetry using pip:
 
         ```shell
@@ -60,7 +68,7 @@ This is a FastAPI application that provides HTTP APIs to perform operations on d
 
 ## Using the API
 
-Once the application is running, you can use `curl` commands to call the API endpoints.
+Once the application is running, you can use `curl` commands to call the API endpoints please replace host name with your local hostname.
 
 ### Lookup Endpoint
 
@@ -94,6 +102,6 @@ Once the application is running, you can use `curl` commands to call the API end
 
 ## Feedback and Contributions
 
-We welcome any feedback or contributions. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or pull request.
+I welcome any feedback or contributions. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or pull request.
 
-Happy coding!
+Happy coding!  -chai
